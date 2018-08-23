@@ -1,0 +1,52 @@
+// Override Bootstrap default colors
+$primary: #bf5700;
+$secondary: #333f48;
+@import "./bootstrap-scss/bootstrap.scss";
+
+//Applies a white overlay to an image
+//@param $imagePath relative path to image to apply overlay to
+@mixin white-overlay($imagePath) {
+    background: linear-gradient(rgba(255, 255, 255, 0.6),rgba(255, 255, 255, 0.6)), url($imagePath);
+}
+
+body, html {
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+body { 
+    @include white-overlay("../assets/images/flannery_allison.jpg");
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#logo {
+    padding-top: 10rem;
+    height: 30rem;
+}
+
+#tagline {
+    font-weight: 300;
+    text-align: center;
+    padding-top: 3rem;
+}
+
+#school {
+    font-weight: 300;
+    text-align: center;
+    font-size: 1.2rem;
+    padding-bottom: 3rem;
+}
+
+.btn {
+    font-weight: 700;
+}
+
+* {
+    -webkit-border-radius: 0 !important;
+       -moz-border-radius: 0 !important;
+            border-radius: 0 !important;
+}
+
