@@ -3,7 +3,7 @@ $primary: #bf5700;
 $secondary: #333f48;
 @import "./bootstrap-scss/bootstrap.scss";
 
-//Applies a white overlay to an image
+//Applies a white overlay to an image background
 //@param $imagePath relative path to image to apply overlay to
 @mixin white-overlay($imagePath) {
     background: linear-gradient(rgba(255, 255, 255, 0.6),rgba(255, 255, 255, 0.6)), url($imagePath);
@@ -14,7 +14,7 @@ body, html {
     font-family: 'Roboto', sans-serif;
 }
 
-body { 
+#landing { 
     @include white-overlay("../assets/images/flannery_allison.jpg");
     height: 100%; 
     background-position: center;

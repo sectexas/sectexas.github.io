@@ -20,7 +20,7 @@ sectexas.github.io/
 │   ├── logos/
 ├── scripts/ 
 └── styles/
-    ├── bootstrap-scss/
+    └── bootstrap-scss/
 </pre>
 sectexas.github.io is the main folder that contains the entire project. All of the HTML files are located in this directory. All of the folders are contained within this directory:
 * [assets](.\assets). This folder contains 2 subfolders: 
